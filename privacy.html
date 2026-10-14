@@ -13,7 +13,7 @@
         <img src="icon.png" alt="" />
         <div>
           <h1>Privacy Policy</h1>
-          <div class="muted">Supa Multi Chat · Effective October 14, 2026</div>
+          <div class="muted">Supa Multi Chat · Effective October 14, 2026 · Updated October 14, 2026</div>
         </div>
       </header>
 
@@ -53,9 +53,19 @@
         Limited Use requirements. You can remove the app's access at any time at
         <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.
       </p>
+      <h2>Chrome extension: logins already in your browser</h2>
       <p>
-        In the Chrome extension, YouTube posting and moderation use the youtube.com login already in your browser; requests go only to
-        youtube.com.
+        The Chrome extension doesn't ask for your Kick or YouTube password. To let you chat and moderate, it uses the login you already
+        have on those sites in Chrome:
+      </p>
+      <ul>
+        <li><strong>Kick:</strong> it reads kick.com's <code>session_token</code> cookie and sends it only to kick.com, the same way kick.com's own page does.</li>
+        <li><strong>YouTube:</strong> it reads youtube.com's <code>SAPISID</code> login cookie to sign requests the way youtube.com's own page does, and sends them only to youtube.com.</li>
+        <li><strong>TikTok:</strong> to connect to a TikTok LIVE chat it briefly stores a temporary visitor cookie for TikTok's chat server only, and removes it once connected. Your own tiktok.com cookies are not read or changed.</li>
+      </ul>
+      <p>
+        These cookies are read on your device only when needed, are never sent anywhere except the site they belong to, and are never
+        sent to the developer. Logging out on kick.com or youtube.com disconnects the extension too.
       </p>
 
       <h2>Services the app connects to</h2>
